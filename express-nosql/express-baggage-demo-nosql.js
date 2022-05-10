@@ -79,7 +79,7 @@ app.get('/getPassengersAffectedByFlight', async function (req, resW) {
 function createClient() {
   return new NoSQLClient({
             serviceType: ServiceType.KVSTORE,
-            endpoint: 'https://localhost:8080'
+            endpoint: 'http://localhost:8080'
 
         });
 }
